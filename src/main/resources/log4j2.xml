@@ -13,7 +13,7 @@
 			<PatternLayout pattern="${LOG_PATTERN}" />
 		</Console>
 
-		<RollingFile name="appLog" fileName="${APP_LOG_ROOT}/playerreactapi.log" filePattern="${APP_LOG_ROOT}/playerreactapi-%d{yyyy-MM-dd}-%i.log">
+		<RollingFile name="appLog" fileName="${APP_LOG_ROOT}/playertest.log" filePattern="${APP_LOG_ROOT}/playertest-%d{yyyy-MM-dd}-%i.log">
 			<PatternLayout pattern="${LOG_PATTERN}" />
 			<Policies>
 				<TimeBasedTriggeringPolicy interval="1" />
@@ -24,7 +24,7 @@
 	</Appenders>
 	<Loggers>
 
-		<Logger name="com.playerreactapi" level="debug" additivity="false">
+		<Logger name="com.app" level="debug" additivity="false">
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="appLog" />
 		</Logger>

@@ -1,0 +1,270 @@
+.gridTable {
+  border-collapse:initial;
+  font-size: 15px;
+  border-spacing: 0px
+}
+
+.pagging-style i {
+  color: #111;
+  border: 1px solid #111;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.pagging-style-gray i {
+  color: #fff;
+  border: 1px solid #111;
+  background-color: gray;
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 3px;
+  cursor: context-menu;
+}
+
+.gridHeader {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1e2024;
+  height: 28px;
+}
+
+.gridRowEven {
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: normal;
+  height: 17px;
+}
+
+.gridRowOdd {
+  color: #000000;
+  background-color: #f2f2f2;
+  font-weight: normal;
+  height: 17px;
+}
+
+.gridHeader td {
+  padding-left: 4px;
+  border-right: 1px solid #bac0c7;
+}
+
+.gridRowEven td,
+.gridRowOdd td {
+  padding-left: 4px;
+  border: 1px solid #bac0c7;
+}
+
+.gridPageOfPage {
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 2px;
+}
+
+.gridPager {
+  background-color: #1e2024;
+}
+
+.gridSort {
+  color: #ffffff;
+  background-color: #998066;
+  text-decoration: none;
+}
+
+.checkedListbox {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.checkedListbox-label{
+  padding-left: 10px;
+}
+
+/*
+[data-tooltip] {
+  display: inline-block;
+  position: relative;
+  cursor: help;
+  padding: -1px;
+}
+
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 350px;
+  text-align: left;
+  white-space: wrap;
+  word-wrap: break-word;
+  border-radius: 4px;
+}
+
+[data-tooltip-position="top"]:before,
+[data-tooltip-position="bottom"]:before {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+[data-tooltip-position="right"]:before,
+[data-tooltip-position="left"]:before {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+[data-tooltip-position="top"]:before {
+  bottom: 100%;
+  margin-bottom: 6px;
+}
+
+[data-tooltip-position="right"]:before {
+  left: 100%;
+  margin-left: 6px;
+}
+
+[data-tooltip-position="bottom"]:before {
+  top: 100%;
+  margin-top: 6px;
+}
+
+[data-tooltip-position="left"]:before {
+  right: 100%;
+  margin-right: 6px;
+}
+
+
+[data-tooltip]:after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+[data-tooltip-position="top"]:after,
+[data-tooltip-position="bottom"]:after {
+  left: 50%;
+  margin-left: -6px;
+}
+
+[data-tooltip-position="right"]:after,
+[data-tooltip-position="left"]:after {
+  top: 50%;
+  margin-top: -6px;
+}
+
+[data-tooltip-position="top"]:after {
+  bottom: 100%;
+  border-width: 6px 6px 0;
+  border-top-color: #000;
+}
+
+[data-tooltip-position="right"]:after {
+  left: 100%;
+  border-width: 6px 6px 6px 0;
+  border-right-color: #000;
+}
+
+[data-tooltip-position="bottom"]:after {
+  top: 100%;
+  border-width: 0 6px 6px;
+  border-bottom-color: #000;
+}
+
+[data-tooltip-position="left"]:after {
+  right: 100%;
+  border-width: 6px 0 6px 6px;
+  border-left-color: #000;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  display: block;
+  z-index: 50;
+}
+*/
+
+.divParent {
+  width: 95%;
+}
+
+.dropdownSelect {
+  position: relative; 
+  padding-left: 5px;
+  background: #fff;
+  color: #111;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #111;
+  /*-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;*/
+}
+
+.dropdownSelect:after {
+  /* Little arrow */
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #0d6efd transparent;
+}
+
+
+.dropdownDiv {  
+  font-weight: 400;
+  z-index: 99;
+  overflow-y: auto;
+  background-color: #fff;
+  color: #111;
+  position: absolute;
+  border-left: 1px solid #111;
+  border-right: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+
+.tooltipDiv {
+  position: absolute; 
+  background: #000;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 350px;
+  text-align: left;
+  white-space: wrap;
+  word-wrap: break-word;
+  border-radius: 4px;  
+  z-index: 99;
+}
+
+.gridRowBacgroundColor{
+	background-color: #0d6efd !important;
+	color:#FFF;
+	cursor:pointer !important;
+}
+

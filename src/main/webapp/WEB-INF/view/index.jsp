@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Player React Api</title>
+<title>Player Test</title>
 </head>
 <body>	
 </body>
