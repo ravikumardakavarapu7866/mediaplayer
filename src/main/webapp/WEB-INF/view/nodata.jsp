@@ -1,1 +1,0 @@
-<div style="color:red"><b>${message}</b></div>		
