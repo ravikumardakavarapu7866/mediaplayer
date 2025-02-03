@@ -1,0 +1,85 @@
+{
+  "name": "mediaplayer_reactui",
+  "version": "1.0",
+  "private": true,
+  "homepage": "/playerreact",
+  "dependencies": {
+    "@date-io/date-fns": "^2.17.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@microsoft/teams-js": "^2.24.0",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.15.18",
+    "@mui/system": "^5.15.15",
+    "@mui/x-data-grid": "^6.20.0",
+    "@mui/x-data-grid-pro": "^6.20.0",
+    "@mui/x-date-pickers": "^7.12.0",
+    "@mui/x-date-pickers-pro": "^7.12.0",
+    "@syncfusion/ej2-react-grids": "^26.1.40",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.10.0",
+    "crypto-js": "^4.2.0",
+    "data-grid": "^3.0.0",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.4.5",
+    "git": "^0.1.5",
+    "react": "^18.3.1",
+    "react-dark-mode": "^1.0.0",
+    "react-data-grid": "^7.0.0-beta.44",
+    "react-dom": "^18.3.1",
+    "react-fontawesome": "^1.7.1",
+    "react-grid-layout": "^1.4.4",
+    "react-hook-form": "^7.51.5",
+    "react-icons": "^5.2.1",
+    "react-material-file-upload": "^0.0.4",
+    "react-modal": "^3.16.1",
+    "react-native-key-generator": "^0.1.1",
+    "react-player": "^2.16.0",
+    "react-pro-sidebar": "^0.6.0",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1",
+    "react-spinners": "^0.14.1",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
+    "react-table": "^7.8.0",
+    "react-toggle-dark-mode": "^1.1.1",
+    "reactstrap": "^8.9.0",
+    "recharts": "^2.12.7",
+    "rsuite": "^5.64.0",
+    "screenfull": "^6.0.2",
+    "socket.io-client": "^4.7.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "mediaplayer": "env-cmd -f .env.mediaplayer.dev react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}

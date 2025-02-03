@@ -1,0 +1,637 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+
+  /* scrollbar-width: none; */
+}
+
+/*......................... Loginpage............................................  */
+
+.build-Number {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  color: rgb(14, 14, 14);
+  z-index: 1;
+}
+
+.login-Form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(/src/assets/images/login_background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 255);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.login-container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.login-container .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 40px;
+  font-size: 16px;
+  color: black;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: black;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.login-container .btn {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10 px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: block; /* Ensure block-level display for centering */
+  margin: 0 auto;
+}
+.login-container .btn:hover {
+  background-color: #fff; /* Change this to your desired hover color */
+}
+
+.login-container .btn:disabled {
+  background-color: #fff; /* Optional: Style for disabled state */
+  cursor: not-allowed;
+}
+
+.input-box.password-input-box .icon {
+  position: absolute;
+  right: 45px; /* Adjust right position to accommodate the eye icon */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.input-box.password-input-box .eye-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.image-div {
+  background-image: url("/src/assets/images/Suresby.png");
+  background-size: cover;
+  width: 300px;
+  height: 150px;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 5px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*......................................Navbar and Header bar styles..................................................*/
+
+.header-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  /* background-color: rgb(99, 97, 91);  */
+  background-color: #0c142b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 2;
+  transition: background-color 0.3s, color 0.5s;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
+}
+
+.Avatar-tooltip {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+/*.................................................... Sidebar Navigation.............................................................. */
+
+.pro-sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  height: calc(100% - 56px);
+  width: 300px;
+  color: #f2f1f1;
+  overflow-y: auto;
+  z-index: 1;
+  transition: width 0.3s;
+}
+
+.sidebar-header {
+  position: sticky;
+  top: 0;
+  left: 10px;
+  height: 56px;
+  /* background-color: rgb(99, 97, 91);  */
+  background-color: #0c142b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 2;
+}
+
+.menu-items-container {
+  padding-top: 10px;
+  max-height: calc(100% - 56px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-bottom: 150px;
+  /* background-color: rgb(99, 97, 91); */
+  background-color: #0c142b;
+  color: #f2f1f1;
+  padding-left: 0px;
+  scrollbar-width: none;
+}
+
+.pro-menu-item {
+  /*padding: 1px 1px;*/
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pro-menu-item:hover {
+  background-color: #0c142b;
+}
+
+.pro-menu-item:focus-within {
+  background-color: #0c142b;
+}
+
+.dark .pro-menu-item:hover {
+  background-color: #615d60;
+}
+
+.dark .pro-menu-item:focus-within {
+  background-color: #615d60;
+}
+
+@media (max-width: 768px) {
+  .pro-sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    height: calc(100% - 56px);
+    width: 100%;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  .sidebar-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 56px; /* Adjust this value to match the height of the header */
+    background-color: #333; /* Add a background color to make the header visible */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .pro-menu-item {
+    padding: 10px;
+  }
+}
+
+/*..................................View Container .............................................................*/
+
+.content-div {
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* Set the height of the content div to the full viewport height */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.content-margin {
+  margin-left: 200px; /* Adjust this value to match the width of the sidebar */
+  width: 100%;
+}
+
+.view-content {
+  margin-left: 80px; /* Adjust this value to match the width of the sidebar */
+  padding-top: 125px; /* Adjust this value to match the height of the header */
+  max-height: calc(
+    100vh - 60px
+  ); /* Adjust this value to match the height of the header */
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* ...........................................Theme Dark and light styles......................................... */
+
+.dark .header-content {
+  background-color: #0c142b;
+  color: #fff;
+}
+.dark .sidebar-header {
+  background-color: #0c142b;
+  color: #fff;
+}
+.dark .menu-items-container {
+  background-color: #0c142b;
+  color: #fff;
+}
+
+/*.................................Player page...............................*/
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+.player-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.controIcons {
+  color: #777;
+  font-size: 100;
+  transform: scale(0.9);
+}
+.controIcons:hover {
+  color: #fff;
+  transform: scale(1);
+}
+
+/*.................................. below are  dashbord video list container related................................................ */
+
+.videoPlayer {
+  padding-top: 150px;
+  width: 1000px;
+  justify-content: center;
+}
+.heading {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.thumbnail {
+  height: 300px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 3%;
+}
+
+.video-tittle {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* padding: 0px 0px 0px 10px; */
+}
+
+.provider-icon {
+  grid-area: provider-icon;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.provider-info > div {
+  display: none;
+}
+
+.provider-info > div:nth-child(-n + 6) {
+  display: inline-block;
+}
+
+.provider-icon-filter {
+  grid-area: provider-icon-filter;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: contain;
+  margin: 15px;
+}
+.container {
+  float: left;
+  width: 80%;
+  padding: 10px;
+}
+.container > .provider-details {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-areas: "provider-icon video-tittle" "empty provider-name";
+  margin-top: 5px;
+}
+
+h5:where(.css-dev-only-do-not-override-1rqnfsa).ant-typography {
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
+
+.filters {
+  padding: 5px;
+}
+
+div.webseries-section:empty {
+  display: none;
+}
+
+.iframe-container {
+  position: relative;
+  height: 100vh; /* Adjust this to the desired height */
+  overflow: hidden;
+}
+
+/*...............................video-player-container...........................*/
+
+.video-player-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1200px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*..........................Table styles............*/
+
+/* .MuiTablePagination-root {
+  display: none;
+}
+
+.MuiDataGrid-footerContainer{
+  display: none;
+} */
+
+.MuiInputBase-root {
+  margin-top: -15px;
+}
+
+.MuiTablePagination-actions {
+  margin-top: -13px;
+}
+
+.first-row-selected {
+  background-color: #ff0000 !important; /* Set the desired color for the selected row */
+}
+
+.css-1iyq7zh-MuiDataGrid-columnHeaders {
+  background-color: #e3dedd;
+  color: #212529;
+}
+
+.highlight-row {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  z-index: 1000; /* Ensure it covers the form */
+  display: flex;
+  justify-content: center; /* Center spinner horizontally */
+  align-items: center; /* Center spinner vertically */
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.provider-name {
+  letter-spacing: normal;
+}
+
+/* The iput filds all the pages  */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.fieldContainer {
+  flex: 1 1 calc(16.66% - 10px);
+  margin-bottom: 10px;
+}
+
+.input-select-option {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.input-select-option-allVideos {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 70%;
+  cursor: pointer;
+}
+
+input.input-select-option,
+select.input-select-option {
+  height: 48px;
+}
+
+.MuiTextField-root {
+  width: 100%;
+}
+
+.MuiInputBase-input {
+  height: 48px;
+}
+
+.MuiInputBase-root {
+  height: 48px;
+}
+
+.modalStyles.helperText {
+  font-size: 12px;
+}
+
+.fieldContainer {
+  margin-bottom: 16px;
+}
+
+.fieldContainer-userToken {
+  margin-bottom: -13px;
+  margin-top: -13px;
+}
+
+.modalStyles.button {
+  padding: 10px 20px;
+}
+
+@media (max-width: 1200px) {
+  .fieldContainer {
+    flex: 1 1 calc(20% - 10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .fieldContainer {
+    flex: 1 1 calc(33.33% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .fieldContainer {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 400px) {
+  .fieldContainer {
+    flex: 1 1 calc(100% - 10px);
+  }
+}
+
+.right-links {
+  display: flex;
+  margin-left: 1000px;
+}
+
+.right-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 0px 0px; /* Padding for links */
+}
